@@ -1,0 +1,55 @@
+/*Example use 1300px / 16 to see breakpoint  */
+
+@media (max-width: 84em) {
+}
+/* below 1200px */
+@media (max-width: 75em) {
+}
+
+/* below 944px (Tablet) */
+@media (max-width: 59em) {
+  nav {
+    position: relative;
+  }
+  .toggleIcon {
+    display: block !important;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .toggleIcon i {
+  }
+  .menu__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: -1000%;
+    left: 0;
+    margin-top: 5rem;
+    padding: 5rem 0;
+    z-index: 1111111;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .ActiveMenu {
+    top: 10%;
+    transition: all 0.3s ease-in;
+  }
+  .logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .menu__content li {
+    padding: 1rem;
+  }
+
+  .menu__content li a:hover {
+    color: #e67e22;
+    transition: all 0.5s ease;
+  }
+}
